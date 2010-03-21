@@ -1,0 +1,16 @@
+<h1>New Product</h1>
+
+<div class="flash">
+  <% flash.each do |type, message| -%>
+      <div class="message <%= type %>">
+        <p><%= message %></p>
+      </div>
+  <% end -%>
+</div>
+
+<% form_for :product, :url => { :action => "create" }, :html => { :multipart => true } do |form| %>
+    <%= form.error_messages %>
+    <%= form.text_field :title %>
+    <%= form.file_field :image %><br />
+    <%= form.submit "Submit" %>
+<% end %>

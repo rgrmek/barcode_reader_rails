@@ -1,0 +1,12 @@
+<h1>Show Product</h1>
+
+<div class="flash">
+  <% flash.each do |type, message| -%>
+      <div class="message <%= type %>">
+        <p><%= message %></p>
+      </div>
+  <% end -%>
+</div>
+
+<%= image_tag @product.image.url %>
+

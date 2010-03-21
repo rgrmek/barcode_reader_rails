@@ -1,0 +1,830 @@
+  [4;36;1mSQL (94.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (62.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (110.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100320185129)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "price" float, "quantity" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100320185129')[0m
+Migrating to AddAttachmentsImageToProduct (20100320185317)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mALTER TABLE "products" ADD "image_file_name" varchar(255)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "products" ADD "image_content_type" varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mALTER TABLE "products" ADD "image_file_size" integer[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "products" ADD "image_updated_at" datetime[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100320185317')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-20 12:09:19) [GET]
+
+ActionController::RoutingError (No route matches "/new" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 12:09:26) [GET]
+Rendering products/new
+Completed in 141ms (View: 125, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 12:14:46) [GET]
+Rendering products/new
+Completed in 969ms (View: 953, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 12:17:21) [GET]
+Rendering products/new
+Completed in 141ms (View: 110, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 12:17:45) [GET]
+Rendering products/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 12:17:50) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"3hq1rKPBv9WT+CwaDKb1yHtZ2Z/QD3MVGC64D10m85Q="}
+Rendering products/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 12:17:56) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"3hq1rKPBv9WT+CwaDKb1yHtZ2Z/QD3MVGC64D10m85Q="}
+Rendering products/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 12:22:16) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"3hq1rKPBv9WT+CwaDKb1yHtZ2Z/QD3MVGC64D10m85Q="}
+Rendering products/new
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 12:22:22) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"3hq1rKPBv9WT+CwaDKb1yHtZ2Z/QD3MVGC64D10m85Q="}
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:24:in `create'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 12:22:28) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"3hq1rKPBv9WT+CwaDKb1yHtZ2Z/QD3MVGC64D10m85Q=", "product"=>{"image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.4416.2>}}
+
+ArgumentError (Unknown key(s): image):
+  app/controllers/products_controller.rb:24:in `create'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (265.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 12:26:46) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"3hq1rKPBv9WT+CwaDKb1yHtZ2Z/QD3MVGC64D10m85Q="}
+Rendering products/new
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 12:26:53) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"3hq1rKPBv9WT+CwaDKb1yHtZ2Z/QD3MVGC64D10m85Q=", "product"=>{"image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.908.1>}}
+
+ArgumentError (Unknown key(s): image):
+  app/controllers/products_controller.rb:24:in `create'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100320185129)
+Migrating to AddAttachmentsImageToProduct (20100320185317)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "updated_at", "title", "price", "quantity", "image_content_type", "image_updated_at", "created_at", "image_file_name") VALUES(NULL, '2010-03-20 19:36:04', NULL, NULL, NULL, NULL, NULL, '2010-03-20 19:36:04', NULL)[0m
+[paperclip] Saving attachments.
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Delete all (78.0ms)[0m   [0;1mDELETE FROM "products" WHERE ("id" IN (1)) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 12:40:51) [GET]
+Rendering products/new
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 12:40:56) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"3hq1rKPBv9WT+CwaDKb1yHtZ2Z/QD3MVGC64D10m85Q=", "product"=>{"image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.908.2>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "updated_at", "title", "price", "quantity", "image_content_type", "image_updated_at", "created_at", "image_file_name") VALUES(364, '2010-03-20 19:40:57', NULL, NULL, NULL, 'image/png', '2010-03-20 19:40:56', '2010-03-20 19:40:57', 'image.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/2/original/image.png
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/products/2
+Completed in 954ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 12:40:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering products/show
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/products/2]
+  [4;36;1mSQL (15.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100320185129)
+Migrating to AddAttachmentsImageToProduct (20100320185317)
+Migrating to AddBarcodeToProduct (20100320195054)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "products" ADD "barcode" varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100320195054')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;36;1mProduct Load (16.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 13:09:42) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"3hq1rKPBv9WT+CwaDKb1yHtZ2Z/QD3MVGC64D10m85Q=", "product"=>{"image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.908.0>}}
+  [4;36;1mProduct Create (16.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(1182, '2010-03-20 20:09:42', NULL, NULL, NULL, 'image/png', NULL, '2010-03-20 20:09:42', '2010-03-20 20:09:42', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/3/original/barcode.png
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/products/3
+Completed in 282ms (DB: 16) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 13:09:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering products/show
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/products/3]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 13:11:15) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"3hq1rKPBv9WT+CwaDKb1yHtZ2Z/QD3MVGC64D10m85Q="}
+  [4;36;1mProduct Create (15.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(NULL, '2010-03-20 20:11:15', NULL, NULL, NULL, NULL, NULL, NULL, '2010-03-20 20:11:15', NULL)[0m
+[paperclip] Saving attachments.
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/products/4
+Completed in 125ms (DB: 15) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 13:11:15) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering products/show
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/products/4]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-20 13:11:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/original/missing.png" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mProduct Load (16.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" LIMIT 1[0m
+  [4;36;1mProduct Load (16.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 14:21:10) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering products/show
+Completed in 172ms (View: 94, DB: 0) | 200 OK [http://localhost/products/4]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-20 14:21:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/original/missing.png" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 14:21:14) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+Rendering products/show
+Completed in 218ms (View: 15, DB: 0) | 200 OK [http://localhost/products/4]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-20 14:21:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/original/missing.png" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" LIMIT 1[0m
+  [4;36;1mProduct Load (16.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/2/original/image.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 2[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (16.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY products.id DESC LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY products.id DESC LIMIT 1[0m
+[paperclip] Deleting attachments.
+  [4;35;1mProduct Destroy (15.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 4[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 14:23:52) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 4) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Product with ID=4):
+  app/controllers/products_controller.rb:43:in `show'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 14:23:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Product with ID=2):
+  app/controllers/products_controller.rb:43:in `show'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 14:23:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 3) [0m
+Rendering products/show
+Completed in 125ms (View: 63, DB: 0) | 200 OK [http://localhost/products/3]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 14:42:39) [GET]
+Rendering products/new
+Completed in 140ms (View: 31, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 15:02:54) [GET]
+Rendering products/new
+Completed in 234ms (View: 62, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 192.168.1.100 at 2010-03-20 15:35:36) [GET]
+Rendering products/new
+Completed in 2219ms (View: 2204, DB: 0) | 200 OK [http://192.168.1.100/products/new]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#new (for 192.168.1.100 at 2010-03-20 15:36:21) [GET]
+Rendering products/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://192.168.1.100/products/new]
+
+
+Processing ProductsController#new (for 192.168.1.100 at 2010-03-20 15:36:23) [GET]
+Rendering products/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://192.168.1.100/products/new]
+
+
+Processing ProductsController#new (for 192.168.1.100 at 2010-03-20 15:36:33) [GET]
+Rendering products/new
+Completed in 62ms (View: 0, DB: 0) | 200 OK [http://192.168.1.100/products/new]
+
+
+Processing ProductsController#create (for 192.168.1.100 at 2010-03-20 15:36:42) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"NhTtDkMIkcbNci1R1kW3rkKBZaqd1/vAhW8Vp2yBdJ4=", "product"=>{"image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.4752.0>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(1901, '2010-03-20 22:36:42', NULL, NULL, NULL, 'image/png', NULL, '2010-03-20 22:36:42', '2010-03-20 22:36:42', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/5/original/barcode.png
+[paperclip] Saving attachments.
+Redirected to http://192.168.1.100:3000/products/5
+Completed in 1078ms (DB: 0) | 302 Found [http://192.168.1.100/products]
+
+
+Processing ProductsController#show (for 192.168.1.100 at 2010-03-20 15:36:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 5) [0m
+Rendering products/show
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://192.168.1.100/products/5]
+
+
+Processing ProductsController#create (for 192.168.1.100 at 2010-03-20 15:40:22) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"NhTtDkMIkcbNci1R1kW3rkKBZaqd1/vAhW8Vp2yBdJ4=", "product"=>{"image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.4752.1>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(51779, '2010-03-20 22:40:22', NULL, NULL, NULL, 'image/jpeg', NULL, '2010-03-20 22:40:22', '2010-03-20 22:40:22', 'test.jpg')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/6/original/test.jpg
+[paperclip] Saving attachments.
+Redirected to http://192.168.1.100:3000/products/6
+Completed in 437ms (DB: 0) | 302 Found [http://192.168.1.100/products]
+
+
+Processing ProductsController#show (for 192.168.1.100 at 2010-03-20 15:40:23) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 6) [0m
+Rendering products/show
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://192.168.1.100/products/6]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" LIMIT 1[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/3/original/barcode.png
+  [4;36;1mProduct Destroy (16.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 3[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" LIMIT 1[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/5/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 5[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" LIMIT 1[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/6/original/test.jpg
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#show (for 192.168.1.100 at 2010-03-20 15:42:30) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 5) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Product with ID=5):
+  app/controllers/products_controller.rb:43:in `show'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#new (for 192.168.1.100 at 2010-03-20 16:06:49) [GET]
+Rendering products/new
+Completed in 610ms (View: 469, DB: 0) | 200 OK [http://192.168.1.100/products/new]
+
+
+Processing ProductsController#create (for 192.168.1.100 at 2010-03-20 16:09:09) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"NhTtDkMIkcbNci1R1kW3rkKBZaqd1/vAhW8Vp2yBdJ4=", "product"=>{"title"=>"Test"}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(NULL, '2010-03-20 23:09:09', 'Test', NULL, NULL, NULL, NULL, NULL, '2010-03-20 23:09:09', NULL)[0m
+[paperclip] Saving attachments.
+[paperclip] Saving attachments.
+Redirected to http://192.168.1.100:3000/products/7
+Completed in 156ms (DB: 0) | 302 Found [http://192.168.1.100/products]
+
+
+Processing ProductsController#show (for 192.168.1.100 at 2010-03-20 16:09:10) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 7) [0m
+Rendering products/show
+Completed in 3203ms (View: 16, DB: 0) | 200 OK [http://192.168.1.100/products/7]
+
+
+Processing ApplicationController#index (for 192.168.1.100 at 2010-03-20 16:09:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 192.168.1.100 at 2010-03-20 16:09:29) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"NhTtDkMIkcbNci1R1kW3rkKBZaqd1/vAhW8Vp2yBdJ4=", "product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.4752.0>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(364, '2010-03-20 23:09:29', 'Test', NULL, NULL, 'image/png', NULL, '2010-03-20 23:09:29', '2010-03-20 23:09:29', 'image.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/8/original/image.png
+[paperclip] Saving attachments.
+Redirected to http://192.168.1.100:3000/products/8
+Completed in 250ms (DB: 0) | 302 Found [http://192.168.1.100/products]
+
+
+Processing ProductsController#show (for 192.168.1.100 at 2010-03-20 16:09:29) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 8) [0m
+Rendering products/show
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://192.168.1.100/products/8]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+  [4;35;1mProduct Load (31.0ms)[0m   [0mSELECT * FROM "products" LIMIT 1[0m
+[paperclip] Deleting attachments.
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 7[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 18:15:39) [GET]
+Rendering products/new
+Completed in 1719ms (View: 1703, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 18:36:58) [GET]
+Rendering products/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 18:37:06) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.6136.0>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(364, '2010-03-21 01:37:06', '', NULL, NULL, 'image/png', NULL, '2010-03-21 01:37:06', '2010-03-21 01:37:06', 'image.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/9/original/image.png
+  [4;35;1mProduct Update (0.0ms)[0m   [0mUPDATE "products" SET "barcode" = '--- 
+- "1212112"
+', "updated_at" = '2010-03-21 01:37:07' WHERE "id" = 9[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/products/9
+Completed in 1141ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 18:37:07) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 9) [0m
+Rendering products/show
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/products/9]
+  [4;35;1mProduct Load (15.0ms)[0m   [0mSELECT * FROM "products" ORDER BY products.id DESC LIMIT 1[0m
+  [4;36;1mProduct Load (16.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY products.id DESC LIMIT 1[0m
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 18:44:20) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.6136.0>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(364, '2010-03-21 01:44:20', '', NULL, NULL, 'image/png', NULL, '2010-03-21 01:44:20', '2010-03-21 01:44:20', 'image.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/10/original/image.png
+  [4;36;1mProduct Update (0.0ms)[0m   [0;1mUPDATE "products" SET "barcode" = '1212112', "updated_at" = '2010-03-21 01:44:20' WHERE "id" = 10[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/products/10
+Completed in 657ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 18:44:21) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 10) [0m
+Rendering products/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/products/10]
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" ORDER BY products.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100320185129)
+Migrating to AddAttachmentsImageToProduct (20100320185317)
+Migrating to AddBarcodeToProduct (20100320195054)
+Migrating to AddBarcodeFormatToProducts (20100321014608)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "products" ADD "barcode_format" varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100321014608')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+  [4;36;1mProduct Load (16.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY products.id DESC LIMIT 1[0m
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-03-20 19:53:06) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.6136.1>}}
+
+SyntaxError (C:/Documents and Settings/Rob/rails/barcode_reader/app/controllers/products_controller.rb:26: unterminated string meets end of file
+C:/Documents and Settings/Rob/rails/barcode_reader/app/controllers/products_controller.rb:26: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-03-20 19:54:02) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.6136.2>}}
+
+SyntaxError (C:/Documents and Settings/Rob/rails/barcode_reader/app/controllers/products_controller.rb:35: syntax error, unexpected tINTEGER, expecting kEND):
+  
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-03-20 19:54:50) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3336.0>}}
+
+SyntaxError (C:/Documents and Settings/Rob/rails/barcode_reader/app/controllers/products_controller.rb:35: syntax error, unexpected tINTEGER, expecting kEND):
+  
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-03-20 19:54:57) [GET]
+
+SyntaxError (C:/Documents and Settings/Rob/rails/barcode_reader/app/controllers/products_controller.rb:35: syntax error, unexpected tINTEGER, expecting kEND):
+  
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 19:55:51) [GET]
+Rendering products/new
+Completed in 344ms (View: 109, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 19:55:53) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3336.1>}}
+  [4;36;1mProduct Create (15.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(364, NULL, '2010-03-21 02:55:53', '', NULL, NULL, 'image/png', NULL, '2010-03-21 02:55:53', '2010-03-21 02:55:53', 'image.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/11/original/image.png
+  [4;35;1mProduct Update (0.0ms)[0m   [0mUPDATE "products" SET "barcode" = '1212112', "updated_at" = '2010-03-21 02:55:54', "barcode_format" = 'CODE-128' WHERE "id" = 11[0m
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/products/11
+Completed in 891ms (DB: 15) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 19:55:54) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+Rendering products/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/products/11]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY products.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:05:56) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3336.2>}}
+Rendering products/new
+Completed in 312ms (View: 15, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:06:02) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3336.3>}}
+Rendering products/new
+Completed in 297ms (View: 15, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:06:09) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3336.4>}}
+Rendering products/new
+Completed in 515ms (View: 93, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:08:56) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3336.5>}}
+Rendering products/new
+Completed in 453ms (View: 31, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:10:48) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3336.1>}}
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:11:58) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.0>}}
+Rendering products/new
+Completed in 953ms (View: 110, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:12:04) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.1>}}
+Rendering products/new
+Completed in 391ms (View: 31, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:12:10) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.2>}}
+Rendering products/new
+Completed in 312ms (View: 31, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:13:11) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.3>}}
+Rendering products/new
+Completed in 313ms (View: 31, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 20:13:20) [GET]
+Rendering products/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:13:25) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.1>}}
+Rendering products/new
+Completed in 344ms (View: 16, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 20:18:22) [GET]
+Rendering products/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:18:30) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.2>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(364, '', '2010-03-21 03:18:30', '', NULL, NULL, 'image/png', NULL, '2010-03-21 03:18:30', '2010-03-21 03:18:30', 'image.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/12/original/image.png
+Redirected to http://localhost:3000/products/12
+Completed in 468ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 20:18:30) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+Rendering products/show
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/products/12]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:18:38) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.4>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(86396, '', '2010-03-21 03:18:38', '', NULL, NULL, 'image/jpeg', NULL, '2010-03-21 03:18:38', '2010-03-21 03:18:38', '1.jpg')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/13/original/1.jpg
+Redirected to http://localhost:3000/products/13
+Completed in 453ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 20:18:38) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 13) [0m
+Rendering products/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/products/13]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 20:19:14) [GET]
+Rendering products/new
+Completed in 125ms (View: 47, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:19:18) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.5>}}
+Rendering products/new
+Completed in 437ms (View: 16, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 20:19:23) [GET]
+Rendering products/new
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:19:27) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.1>}}
+Rendering products/new
+Completed in 266ms (View: 16, DB: 0) | 200 OK [http://localhost/products]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" ORDER BY products.id DESC LIMIT 1[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 10) [0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 11) [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 12) [0m
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 20:23:06) [GET]
+Rendering products/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:23:12) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.2>}}
+Rendering products/new
+Completed in 156ms (View: 16, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:24:00) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.3>}}
+Rendering products/new
+Completed in 219ms (View: 16, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 20:24:04) [GET]
+Rendering products/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:24:10) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.4>}}
+Rendering products/new
+Completed in 141ms (View: 16, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 20:35:16) [GET]
+Rendering products/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:35:24) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.6>}}
+Rendering products/new
+Completed in 375ms (View: 78, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:35:50) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.7>}}
+Rendering products/new
+Completed in 218ms (View: 15, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:36:15) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.8>}}
+Rendering products/new
+Completed in 203ms (View: 16, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-03-20 20:36:20) [GET]
+Rendering products/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:36:25) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.1>}}
+Rendering products/new
+Completed in 187ms (View: 31, DB: 0) | 200 OK [http://localhost/products]
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(364, 'CODE-128', '2010-03-21 03:42:39', NULL, NULL, NULL, 'image/png', '1212112', '2010-03-21 03:39:36', '2010-03-21 03:42:39', 'image.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/14/original/image.png
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:43:14) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.2>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(364, 'CODE-128', '2010-03-21 03:43:14', '', NULL, NULL, 'image/png', '1212112', '2010-03-21 03:43:14', '2010-03-21 03:43:14', 'image.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/15/original/image.png
+Redirected to http://localhost:3000/products/15
+Completed in 469ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-03-20 20:43:14) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 15) [0m
+Rendering products/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/products/15]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:43:21) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.3>}}
+Rendering products/new
+Completed in 719ms (View: 16, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-03-20 20:47:53) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"pc81rogelPcr9F1WwYy7fxQzP4rbJ/YC3K5HCt2xs7A=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5756.4>}}
+Rendering products/new
+Completed in 547ms (View: 32, DB: 0) | 200 OK [http://localhost/products]
