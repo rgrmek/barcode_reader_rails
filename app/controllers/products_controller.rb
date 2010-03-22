@@ -7,6 +7,9 @@
 
 class ProductsController < ApplicationController
 
+  # ignore authenticity token so it no longer needs to be passed in the HTTP requests
+  skip_before_filter :verify_authenticity_token
+
   # GET /products/new
   # GET /products/new.xml
   def new

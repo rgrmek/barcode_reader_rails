@@ -13,7 +13,10 @@ class Product < ActiveRecord::Base
   before_validation :process_barcode
 
   def process_barcode
-    self.barcode = %x{C:\\Program Files\\ZBar\\bin\\zbarimg -D "#{self.image.to_file.path}"}.scan(/\d+/).second
-    self.barcode_format = %x{C:\\Program Files\\ZBar\\bin\\zbarimg -D "#{self.image.to_file.path}"}.scan(/[^:]*/).first
+    tmp_file_path = image.to_file.path rescue nil
+    if !tmp_file_path.nil?
+      self.barcode = %x{C:\\Program Files\\ZBar\\bin\\zbarimg -D "#{self.image.to_file.path}"}.scan(/\d+/).second
+      self.barcode_format = %x{C:\\Program Files\\ZBar\\bin\\zbarimg -D "#{self.image.to_file.path}"}.scan(/[^:]*/).first
+    end
   end
 end
