@@ -6,7 +6,8 @@ This is web application allows users to upload images of barcodes to the web ser
 Once received, the web applicatin will process the barcode image, scanning it with an external
 barcode reader application called ZBar.
 
-Primarily, this web system is used in conjunction with 
+Primarily, this web system is used in conjunction with the barcode reader J2ME reader
+application. Repository can be viewed at: http://github.com/RedTeamCOSC470/barcode_reader_mobile
 
 Mobile device and web server interaction process:
 	- Take an image of a barcode with a mobile device (i.e. Nokia N97).

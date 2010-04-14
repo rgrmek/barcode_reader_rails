@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="6a9dca00-800d-4b9c-91dc-a35aed251ccd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="DELETED" beforePath="C:\Documents and Settings\Rob\rails\barcode_reader\public\system\images\16\original\image.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/new.html.erb" afterPath="$PROJECT_DIR$/app/views/products/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
     </list>
     <ignored path="barcode_reader.iws" />
@@ -35,7 +31,7 @@
       <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="55" selection-start="520" selection-end="520" vertical-scroll-proportion="0.25375625">
+            <state line="9" column="96" selection-start="647" selection-end="647" vertical-scroll-proportion="0.2854758">
               <folding />
             </state>
           </provider>
@@ -444,7 +440,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="55" selection-start="520" selection-end="520" vertical-scroll-proportion="0.25375625">
+        <state line="9" column="96" selection-start="647" selection-end="647" vertical-scroll-proportion="0.2854758">
           <folding />
         </state>
       </provider>
