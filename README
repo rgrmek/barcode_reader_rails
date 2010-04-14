@@ -3,7 +3,7 @@
 ================================================================================================
 
 This is web application allows users to upload images of barcodes to the web server.
-Once received, the web applicatin will process the barcode image, scanning it with an external
+Once received, the web application will process the barcode image, scanning it with an external
 barcode reader application called ZBar.
 
 Primarily, this web system is used in conjunction with the barcode reader J2ME reader
