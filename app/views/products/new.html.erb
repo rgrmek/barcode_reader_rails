@@ -10,7 +10,7 @@
 
 <% form_for :product, :url => { :action => "create" }, :html => { :multipart => true } do |form| %>
     <%= form.error_messages %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title %><br />
     <%= form.file_field :image %><br />
     <%= form.submit "Submit" %>
 <% end %>

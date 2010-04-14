@@ -28,15 +28,18 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        flash[:notice] = 'Success! The image was successfully read.'
-        format.html { redirect_to(@product) }
+        flash[:notice] = 'Success! Barcode: ' + @product.barcode + '. Format: ' + @product.barcode_format + '.'
+        format.html { render :action => "message" }
         format.xml  { render :xml => @product, :status => :created, :location => @product }
       else
-        flash[:notice] = 'Failed to process image! Please re-capture an image of the barcode.'
-        format.html { render :action => "new" }
+        flash[:error] = 'Please re-capture an image of the barcode.'
+        format.html { render :action => "message" }
         format.xml  { render :xml => @product.errors, :status => :unprocessable_entity }
       end
     end
+  end
+
+  def message
   end
 
   # GET /products/1

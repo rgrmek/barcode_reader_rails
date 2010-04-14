@@ -1125,3 +1125,861 @@ Processing ProductsController#create (for 192.168.1.102 at 2010-03-22 16:37:04) 
   Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.4668.4>}}
 Rendering products/new
 Completed in 657ms (View: 16, DB: 0) | 200 OK [http://192.168.1.100/products]
+
+
+Processing ProductsController#new (for 66.51.110.153 at 2010-03-27 19:10:58) [GET]
+Rendering products/new
+Completed in 1594ms (View: 1500, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/new]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 19:34:25) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.0>}}
+Rendering products/new
+Completed in 3984ms (View: 31, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 19:35:24) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"7JKhIyfeAL94yo47CqFJCIDqrjO2O828esNKzd5ud8w=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.1>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(86396, NULL, '2010-03-28 02:35:24', '', NULL, NULL, 'image/jpeg', NULL, '2010-03-28 02:35:24', '2010-03-28 02:35:24', '1.jpg')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/17/original/1.jpg
+Redirected to http://barcodereader.oncloud.org/products/17
+Completed in 641ms (DB: 0) | 302 Found [http://barcodereader.oncloud.org/products]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 19:35:25) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 17) [0m
+Rendering products/show
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/17]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 19:36:05) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.1>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(571756, NULL, '2010-03-28 02:36:05', 'Test', NULL, NULL, 'image/png', NULL, '2010-03-28 02:36:05', '2010-03-28 02:36:05', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/18/original/barcode.png
+Redirected to http://barcodereader.oncloud.org/products/18
+Completed in 485ms (DB: 0) | 302 Found [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 19:36:16) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 18) [0m
+Rendering products/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/18]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 19:38:17) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.2>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(571756, NULL, '2010-03-28 02:38:17', 'Test', NULL, NULL, 'image/png', NULL, '2010-03-28 02:38:17', '2010-03-28 02:38:17', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/19/original/barcode.png
+Redirected to http://barcodereader.oncloud.org/products/19
+Completed in 391ms (DB: 0) | 302 Found [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 19:38:27) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 19) [0m
+Rendering products/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/19]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 19:40:10) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.3>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(472156, NULL, '2010-03-28 02:40:11', 'Test', NULL, NULL, 'image/png', NULL, '2010-03-28 02:40:10', '2010-03-28 02:40:11', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/20/original/barcode.png
+Redirected to http://barcodereader.oncloud.org/products/20
+Completed in 484ms (DB: 0) | 302 Found [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 19:40:38) [GET]
+  Parameters: {"id"=>"20"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 20) [0m
+Rendering products/show
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/20]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 19:46:53) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.2>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(8219, NULL, '2010-03-28 02:46:53', 'Test', NULL, NULL, 'image/png', NULL, '2010-03-28 02:46:53', '2010-03-28 02:46:53', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/21/original/barcode.png
+Redirected to http://barcodereader.oncloud.org/products/21
+Completed in 344ms (DB: 0) | 302 Found [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 19:47:04) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 21) [0m
+Rendering products/show
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/21]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 19:48:33) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.3>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(9838, NULL, '2010-03-28 02:48:33', 'Test', NULL, NULL, 'image/png', NULL, '2010-03-28 02:48:33', '2010-03-28 02:48:33', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/22/original/barcode.png
+Redirected to http://barcodereader.oncloud.org/products/22
+Completed in 296ms (DB: 0) | 302 Found [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 19:48:42) [GET]
+  Parameters: {"id"=>"22"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 22) [0m
+Rendering products/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/22]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 19:50:54) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.4>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(112273, NULL, '2010-03-28 02:50:54', 'Test', NULL, NULL, 'image/png', NULL, '2010-03-28 02:50:54', '2010-03-28 02:50:54', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/23/original/barcode.png
+Redirected to http://barcodereader.oncloud.org/products/23
+Completed in 281ms (DB: 0) | 302 Found [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 19:51:59) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.5>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(147025, NULL, '2010-03-28 02:51:59', 'Test', NULL, NULL, 'image/png', NULL, '2010-03-28 02:51:59', '2010-03-28 02:51:59', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/24/original/barcode.png
+Redirected to http://barcodereader.oncloud.org/products/24
+Completed in 390ms (DB: 0) | 302 Found [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 19:52:49) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 24) [0m
+Rendering products/show
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/24]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:03:49) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.1>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(147025, 'EAN-13', '2010-03-28 03:03:49', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 03:03:49', '2010-03-28 03:03:49', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/25/original/barcode.png
+Redirected to http://barcodereader.oncloud.org/products/25
+Completed in 469ms (DB: 0) | 302 Found [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 20:04:28) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+Rendering products/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/25]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 20:04:36) [GET]
+  Parameters: {"id"=>"25"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+Rendering products/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/25]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 20:05:57) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+Rendering products/show
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/25]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-27 20:06:07) [GET]
+  Parameters: {"id"=>"25"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+Rendering products/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/25]
+
+
+Processing ProductsController#new (for 66.51.110.153 at 2010-03-27 20:11:21) [GET]
+Rendering products/new
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/new]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:11:42) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"7JKhIyfeAL94yo47CqFJCIDqrjO2O828esNKzd5ud8w=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.0>}}
+Rendering products/message
+Completed in 766ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:13:34) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.1>}}
+Rendering products/message
+Completed in 344ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:14:46) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.2>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(131662, 'EAN-13', '2010-03-28 03:14:47', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 03:14:47', '2010-03-28 03:14:47', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/26/original/barcode.png
+Redirected to http://barcodereader.oncloud.org/products/26
+Completed in 485ms (DB: 0) | 302 Found [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:15:34) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.3>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(131662, 'EAN-13', '2010-03-28 03:15:34', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 03:15:34', '2010-03-28 03:15:34', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/27/original/barcode.png
+Rendering products/message
+Completed in 453ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:16:35) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.0>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(131662, 'EAN-13', '2010-03-28 03:16:36', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 03:16:36', '2010-03-28 03:16:36', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/28/original/barcode.png
+Rendering products/message
+Completed in 484ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:17:52) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.1>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(131662, 'EAN-13', '2010-03-28 03:17:53', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 03:17:53', '2010-03-28 03:17:53', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/29/original/barcode.png
+Rendering products/message
+Completed in 829ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:32:49) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.2>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(121759, 'EAN-13', '2010-03-28 03:32:49', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 03:32:49', '2010-03-28 03:32:49', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/30/original/barcode.png
+Rendering products/message
+Completed in 453ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:39:10) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.4>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(143996, 'EAN-13', '2010-03-28 03:39:10', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 03:39:10', '2010-03-28 03:39:10', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/31/original/barcode.png
+Rendering products/message
+Completed in 610ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:40:25) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.0>}}
+Rendering products/message
+Completed in 344ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:41:44) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.1>}}
+Rendering products/message
+Completed in 391ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:42:08) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.3>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(134672, 'EAN-13', '2010-03-28 03:42:09', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 03:42:08', '2010-03-28 03:42:09', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/32/original/barcode.png
+Rendering products/message
+Completed in 547ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 20:59:35) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.5>}}
+Rendering products/message
+Completed in 344ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 21:00:07) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.6>}}
+Rendering products/message
+Completed in 328ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 21:01:33) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.1>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(133402, 'EAN-13', '2010-03-28 04:01:34', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 04:01:33', '2010-03-28 04:01:34', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/33/original/barcode.png
+Rendering products/message
+Completed in 563ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 21:04:16) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.7>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(128656, 'EAN-13', '2010-03-28 04:04:17', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 04:04:16', '2010-03-28 04:04:17', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/34/original/barcode.png
+Rendering products/message
+Completed in 578ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY products.id DESC LIMIT 1[0m
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 21:07:14) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.8>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(131997, 'EAN-13', '2010-03-28 04:07:14', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 04:07:14', '2010-03-28 04:07:14', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/35/original/barcode.png
+Rendering products/message
+Completed in 469ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-03-27 21:08:56) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5588.9>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(128626, 'EAN-13', '2010-03-28 04:08:56', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-03-28 04:08:56', '2010-03-28 04:08:56', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/36/original/barcode.png
+Rendering products/message
+Completed in 484ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-28 17:23:32) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+Rendering products/show
+Completed in 390ms (View: 375, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/25]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-28 17:23:33) [GET]
+  Parameters: {"id"=>"25"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+Rendering products/show
+Completed in 1578ms (View: 1531, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/25]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-28 17:23:38) [GET]
+  Parameters: {"id"=>"30"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 30) [0m
+Rendering products/show
+Completed in 78ms (View: 31, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/30]
+
+
+Processing ProductsController#index (for 66.51.110.153 at 2010-03-28 17:23:47) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, message, new, and show):
+  jaws (0.6.0) lib/jaws/server.rb:146:in `process_request'
+  jaws (0.6.0) lib/jaws/server.rb:276:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:133:in `chunked_read'
+  jaws (0.6.0) lib/jaws/server.rb:118:in `loop'
+  jaws (0.6.0) lib/jaws/server.rb:118:in `chunked_read'
+  jaws (0.6.0) lib/jaws/server.rb:271:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:253:in `loop'
+  jaws (0.6.0) lib/jaws/server.rb:253:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:345:in `run'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `initialize'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `new'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `run'
+  C:/Ruby/lib/ruby/1.8/mutex_m.rb:33:in `collect'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `each'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `collect'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `run'
+  C:/Ruby/lib/ruby/1.8/mutex_m.rb:67:in `synchronize'
+  jaws (0.6.0) lib/jaws/server.rb:329:in `run'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-28 17:23:55) [GET]
+  Parameters: {"id"=>"31"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 31) [0m
+Rendering products/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/31]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-28 17:24:00) [GET]
+  Parameters: {"id"=>"30"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 30) [0m
+Rendering products/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/30]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-28 17:25:02) [GET]
+  Parameters: {"id"=>"32"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 32) [0m
+Rendering products/show
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/32]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-28 17:25:08) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 25) [0m
+Rendering products/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/25]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-28 17:25:25) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 18) [0m
+Rendering products/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/18]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-03-28 17:25:37) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 18) [0m
+Rendering products/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/18]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-01 13:07:35) [GET]
+  Parameters: {"id"=>"32"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 32) [0m
+Rendering products/show
+Completed in 2156ms (View: 2078, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/32]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-01 13:08:19) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.548.0>}}
+Rendering products/message
+Completed in 2766ms (View: 31, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-01 13:28:51) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.548.0>}}
+Rendering products/message
+Completed in 547ms (View: 15, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-01 13:31:00) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.548.1>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(164555, NULL, '2010-04-01 20:31:00', 'Test', NULL, NULL, 'image/png', NULL, '2010-04-01 20:31:00', '2010-04-01 20:31:00', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/37/original/barcode.png
+
+TypeError (can't convert nil into String):
+  app/controllers/products_controller.rb:31:in `create'
+  app/controllers/products_controller.rb:29:in `create'
+  jaws (0.6.0) lib/jaws/server.rb:146:in `process_request'
+  jaws (0.6.0) lib/jaws/server.rb:276:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:133:in `chunked_read'
+  jaws (0.6.0) lib/jaws/server.rb:118:in `loop'
+  jaws (0.6.0) lib/jaws/server.rb:118:in `chunked_read'
+  jaws (0.6.0) lib/jaws/server.rb:271:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:253:in `loop'
+  jaws (0.6.0) lib/jaws/server.rb:253:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:345:in `run'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `initialize'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `new'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `run'
+  C:/Ruby/lib/ruby/1.8/mutex_m.rb:33:in `collect'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `each'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `collect'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `run'
+  C:/Ruby/lib/ruby/1.8/mutex_m.rb:67:in `synchronize'
+  jaws (0.6.0) lib/jaws/server.rb:329:in `run'
+
+Rendered rescues/_trace (297.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#new (for 66.51.110.153 at 2010-04-01 13:32:25) [GET]
+Rendering products/new
+Completed in 1938ms (View: 1922, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/new]
+
+
+Processing ProductsController#new (for 66.51.110.153 at 2010-04-01 13:33:18) [GET]
+Rendering products/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/new]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-01 13:33:30) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"PUqG809yhxcQdRYmTMls1yP9RrAnuVkyT4cIBrbAuhM=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5636.0>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(86396, NULL, '2010-04-01 20:33:30', '', NULL, NULL, 'image/jpeg', NULL, '2010-04-01 20:33:30', '2010-04-01 20:33:30', '1.jpg')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/38/original/1.jpg
+
+TypeError (can't convert nil into String):
+  app/controllers/products_controller.rb:31:in `create'
+  app/controllers/products_controller.rb:29:in `create'
+  jaws (0.6.0) lib/jaws/server.rb:146:in `process_request'
+  jaws (0.6.0) lib/jaws/server.rb:276:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:133:in `chunked_read'
+  jaws (0.6.0) lib/jaws/server.rb:118:in `loop'
+  jaws (0.6.0) lib/jaws/server.rb:118:in `chunked_read'
+  jaws (0.6.0) lib/jaws/server.rb:271:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:253:in `loop'
+  jaws (0.6.0) lib/jaws/server.rb:253:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:345:in `run'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `initialize'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `new'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `run'
+  C:/Ruby/lib/ruby/1.8/mutex_m.rb:33:in `collect'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `each'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `collect'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `run'
+  C:/Ruby/lib/ruby/1.8/mutex_m.rb:67:in `synchronize'
+  jaws (0.6.0) lib/jaws/server.rb:329:in `run'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-01 13:35:04) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"PUqG809yhxcQdRYmTMls1yP9RrAnuVkyT4cIBrbAuhM=", "product"=>{"title"=>"", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5636.1>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(86396, NULL, '2010-04-01 20:35:04', '', NULL, NULL, 'image/jpeg', NULL, '2010-04-01 20:35:04', '2010-04-01 20:35:04', '1.jpg')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/39/original/1.jpg
+Rendering products/message
+Completed in 265ms (View: 15, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-01 13:35:22) [GET]
+  Parameters: {"id"=>"39"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 39) [0m
+Rendering products/show
+Completed in 125ms (View: 47, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/39]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-01 13:39:29) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5636.2>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(153201, NULL, '2010-04-01 20:39:29', 'Test', NULL, NULL, 'image/png', NULL, '2010-04-01 20:39:29', '2010-04-01 20:39:29', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/40/original/barcode.png
+Rendering products/message
+Completed in 500ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-01 13:39:51) [GET]
+  Parameters: {"id"=>"40"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 40) [0m
+Rendering products/show
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/40]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-01 13:42:53) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5636.0>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(141491, 'EAN-13', '2010-04-01 20:42:53', 'Test', NULL, NULL, 'image/png', '7046606282801', '2010-04-01 20:42:53', '2010-04-01 20:42:53', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/41/original/barcode.png
+Rendering products/message
+Completed in 579ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" ORDER BY products.id DESC LIMIT 1[0m
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-01 13:45:34) [GET]
+  Parameters: {"id"=>"41"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 41) [0m
+Rendering products/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/41]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-01 18:43:53) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5636.0>}}
+  [4;35;1mProduct Create (15.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(65044, 'EAN-13', '2010-04-02 01:43:55', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-04-02 01:43:53', '2010-04-02 01:43:55', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/42/original/barcode.png
+Rendering products/message
+Completed in 1484ms (View: 0, DB: 15) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#new (for 66.51.110.153 at 2010-04-01 18:44:56) [GET]
+Rendering products/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/new]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-12 12:45:23) [GET]
+  Parameters: {"id"=>"41"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 41) [0m
+Rendering products/show
+Completed in 718ms (View: 640, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/41]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-12 12:45:37) [GET]
+  Parameters: {"id"=>"42"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 42) [0m
+Rendering products/show
+Completed in 94ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/42]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-12 12:47:43) [GET]
+  Parameters: {"id"=>"39"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 39) [0m
+Rendering products/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/39]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-12 12:48:35) [GET]
+  Parameters: {"id"=>"41"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 41) [0m
+Rendering products/show
+Completed in 312ms (View: 281, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/41]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-12 13:05:46) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.4504.0>}}
+  [4;35;1mProduct Create (0.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(82768, 'EAN-13', '2010-04-12 20:05:47', 'Test', NULL, NULL, 'image/png', '0036000282801', '2010-04-12 20:05:46', '2010-04-12 20:05:47', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/43/original/barcode.png
+Rendering products/message
+Completed in 2406ms (View: 250, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-12 13:07:11) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.4504.1>}}
+Rendering products/message
+Completed in 360ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-12 15:12:24) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5640.0>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(174659, 'EAN-13', '2010-04-12 22:12:26', 'Test', NULL, NULL, 'image/png', '2030606288807', '2010-04-12 22:12:24', '2010-04-12 22:12:26', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/44/original/barcode.png
+Rendering products/message
+Completed in 3250ms (View: 234, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-12 15:13:07) [GET]
+  Parameters: {"id"=>"44"}
+  [4;35;1mProduct Load (156.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 44) [0m
+Rendering products/show
+Completed in 219ms (View: 47, DB: 156) | 200 OK [http://barcodereader.oncloud.org/products/44]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 08:48:38) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5016.0>}}
+Rendering products/message
+Completed in 8719ms (View: 172, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 08:50:12) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.5016.1>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(145307, 'EAN-13', '2010-04-13 15:50:13', 'Test', NULL, NULL, 'image/png', '0083000006685', '2010-04-13 15:50:12', '2010-04-13 15:50:13', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/45/original/barcode.png
+Rendering products/message
+Completed in 1266ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-13 09:32:52) [GET]
+  Parameters: {"id"=>"45\\"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 45) [0m
+Rendering products/show
+Completed in 172ms (View: 125, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/45\]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-13 09:32:54) [GET]
+  Parameters: {"id"=>"45"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 45) [0m
+Rendering products/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/45]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-13 09:38:42) [GET]
+  Parameters: {"id"=>"46]"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 46) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Product with ID=46]):
+  app/controllers/products_controller.rb:48:in `show'
+  jaws (0.6.0) lib/jaws/server.rb:146:in `process_request'
+  jaws (0.6.0) lib/jaws/server.rb:276:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:133:in `chunked_read'
+  jaws (0.6.0) lib/jaws/server.rb:118:in `loop'
+  jaws (0.6.0) lib/jaws/server.rb:118:in `chunked_read'
+  jaws (0.6.0) lib/jaws/server.rb:271:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:253:in `loop'
+  jaws (0.6.0) lib/jaws/server.rb:253:in `process_client'
+  jaws (0.6.0) lib/jaws/server.rb:345:in `run'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `initialize'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `new'
+  jaws (0.6.0) lib/jaws/server.rb:343:in `run'
+  C:/Ruby/lib/ruby/1.8/mutex_m.rb:33:in `collect'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `each'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `collect'
+  jaws (0.6.0) lib/jaws/server.rb:342:in `run'
+  C:/Ruby/lib/ruby/1.8/mutex_m.rb:67:in `synchronize'
+  jaws (0.6.0) lib/jaws/server.rb:329:in `run'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-13 09:38:48) [GET]
+  Parameters: {"id"=>"45"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 45) [0m
+Rendering products/show
+Completed in 532ms (View: 453, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/45]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 09:41:02) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3892.0>}}
+Rendering products/message
+Completed in 2594ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 09:41:23) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3892.1>}}
+Rendering products/message
+Completed in 625ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 09:41:54) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3892.2>}}
+  [4;36;1mProduct Create (0.0ms)[0m   [0;1mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(145285, 'EAN-13', '2010-04-13 16:41:54', 'Test', NULL, NULL, 'image/png', '0083000006685', '2010-04-13 16:41:54', '2010-04-13 16:41:54', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/46/original/barcode.png
+Rendering products/message
+Completed in 562ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 09:44:29) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3892.3>}}
+Rendering products/message
+Completed in 532ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 09:44:50) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3892.4>}}
+Rendering products/message
+Completed in 391ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 09:45:12) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3892.5>}}
+Rendering products/message
+Completed in 594ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 09:45:47) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3892.6>}}
+Rendering products/message
+Completed in 484ms (View: 15, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 09:46:09) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3892.7>}}
+Rendering products/message
+Completed in 829ms (View: 0, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#create (for 66.51.110.153 at 2010-04-13 09:59:07) [POST]
+  Parameters: {"product"=>{"title"=>"Test", "image"=>#<File:C:/DOCUME~1/Rob/LOCALS~1/Temp/RackMultipart.3892.8>}}
+  [4;35;1mProduct Create (16.0ms)[0m   [0mINSERT INTO "products" ("image_file_size", "barcode_format", "updated_at", "title", "price", "quantity", "image_content_type", "barcode", "image_updated_at", "created_at", "image_file_name") VALUES(152743, 'EAN-13', '2010-04-13 16:59:07', 'Test', NULL, NULL, 'image/png', '0083000006685', '2010-04-13 16:59:07', '2010-04-13 16:59:07', 'barcode.png')[0m
+[paperclip] Saving attachments.
+[paperclip] saving C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/47/original/barcode.png
+Rendering products/message
+Completed in 656ms (View: 15, DB: 16) | 200 OK [http://barcodereader.oncloud.org/products/]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-13 09:59:38) [GET]
+  Parameters: {"id"=>"46"}
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 46) [0m
+Rendering products/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/46]
+
+
+Processing ProductsController#show (for 66.51.110.153 at 2010-04-13 09:59:41) [GET]
+  Parameters: {"id"=>"47"}
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 47) [0m
+Rendering products/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://barcodereader.oncloud.org/products/47]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/16/original/image.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 16[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" LIMIT 1[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/17/original/1.jpg
+  [4;35;1mProduct Destroy (16.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 17[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m
+  [4;35;1mProduct Load (16.0ms)[0m   [0mSELECT * FROM "products" [0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+  [4;35;1mProduct Load (47.0ms)[0m   [0mSELECT * FROM "products" [0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/18/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 18[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/19/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 19[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/20/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 20[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/21/original/barcode.png
+  [4;35;1mProduct Destroy (16.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 21[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/22/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 22[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/23/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 23[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/24/original/barcode.png
+  [4;36;1mProduct Destroy (15.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 24[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/25/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 25[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/26/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 26[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/27/original/barcode.png
+  [4;35;1mProduct Destroy (16.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 27[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/28/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 28[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/29/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 29[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/30/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 30[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/31/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 31[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/32/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 32[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/33/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 33[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/34/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 34[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/35/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 35[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/36/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 36[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/37/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 37[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/38/original/1.jpg
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 38[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/39/original/1.jpg
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 39[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/40/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 40[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/41/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 41[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/42/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 42[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/43/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 43[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/44/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 44[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/45/original/barcode.png
+  [4;35;1mProduct Destroy (16.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 45[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/46/original/barcode.png
+  [4;36;1mProduct Destroy (0.0ms)[0m   [0;1mDELETE FROM "products" WHERE "id" = 46[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting C:/Documents and Settings/Rob/rails/barcode_reader/public/system/images/47/original/barcode.png
+  [4;35;1mProduct Destroy (0.0ms)[0m   [0mDELETE FROM "products" WHERE "id" = 47[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "products" [0m

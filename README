@@ -2,17 +2,40 @@
 == Welcome to the Barcode Reader Web Application
 ================================================================================================
 
-This is web application allows mobile devices users to upload images captured by the mobile
-devices camera to the web server. Once received, the web server will process the barcode image.
+This is web application allows users to upload images of barcodes to the web server.
+Once received, the web applicatin will process the barcode image, scanning it with an external
+barcode reader application called ZBar.
+
+Primarily, this web system is used in conjunction with 
+
+Mobile device and web server interaction process:
+	- Take an image of a barcode with a mobile device (i.e. Nokia N97).
+	- Send the image to the web server as a stream of bytes in a HTTP POST request.
+	- Web server re-creates the image as a temporary file.
+	- Web server performs image recognition/processing.
+	- If the web server is successful in scanning the barcode value from the image, then will
+	  save the image permanently on the web server locally and saves barcode information to
+	  the database.
+	- Web server re-directs to a page with the barcode information or an error message if it was
+	  unsuccessful in reading the image.
+	- Mobile device's application reads the information and displays it to the user.
+To implement (optional):
+	- Web server looks up barcode on the internet and finds product information
+	- Web server sends product information back to mobile device
+
+================================================================================================
+== Programs Used:
+================================================================================================
+
+ZBar - performs the actual barcode scanning:
+Link: http://zbar.sourceforge.net/
 
 ================================================================================================
 == Gems Used:
 ================================================================================================
 
-# for adding binary images to a model:
-paperclip
-http://github.com/thoughtbot/paperclip
+nokogiri - for possible screen scraping:
+Link: http://nokogiri.org/tutorials/installing_nokogiri.html
 
-# for screen scraping:
-nokogiri
-http://nokogiri.org/tutorials/installing_nokogiri.html
+paperclip - for adding binary images to a model:
+Link: http://github.com/thoughtbot/paperclip
