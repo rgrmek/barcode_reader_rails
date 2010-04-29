@@ -1,5 +1,5 @@
 ##########################################################################################
-# File:     product.rb
+# File:     product_controller.rb
 # Project:  Barcode Reader
 # Author:   Rob Grmek
 # Desc:     The controller for products.

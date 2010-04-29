@@ -8,10 +8,18 @@
 
 class Product < ActiveRecord::Base
 
+  # a product has an associated image of a barcode
   has_attached_file :image
+
+  # ensure that the image must have been processed before the product will save
   validates_presence_of :barcode, :barcode_format
+
+  # process the barcode before validations are run
   before_validation :process_barcode
 
+  # Processing a barcode image:
+  #   will use the temporary file of the image that was uploaded and pass it to the 
+  #   ZBar reader barcode scanning software which will attempt to decode the image
   def process_barcode
     tmp_file_path = image.to_file.path rescue nil
     if !tmp_file_path.nil?
